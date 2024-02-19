@@ -1,0 +1,25 @@
+let amount = prompt("Amount plz  ");
+let currency = prompt("Currency Name  ");
+
+let rate = 0;
+
+switch(currency)
+{
+    case "dollar":
+    rate = 110;
+    break;
+    
+    case  "pound":
+    rate = 139;
+    break;
+    
+    case  "euro":
+    rate = 110;
+    break;
+
+    default:
+        rate = 110;
+        break;
+    
+}
+console.log(`${amount} ${currency} = ${amount * rate} BDT`);
